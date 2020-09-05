@@ -7,11 +7,14 @@ class AnalogClock {
         Scanner scanner = new Scanner(System.in);
 
         //Reads ints from user
-
-
+        int hourAngle = scanner.nextInt();
+        int minAngle;
         /*
          *  your code goes here
          */
+        
+        minAngle = (hourAngle % 30) * 12;
+        System.out.println(minAngle);
 
         // closing the scanner object
         scanner.close();
